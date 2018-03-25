@@ -1,0 +1,289 @@
+html {
+  font-size: 18px;
+  color: white;
+  font-family: Helvetica;
+}
+
+header {
+  background-color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.banner {
+  background-color: black;
+  display: flex;
+  width: 960px;
+  align-items: center;
+}
+
+h2 {
+  font-size: 1rem;
+}
+
+header img {
+  height: 1.5rem;
+  margin: 0.66rem 1rem 0.66rem 0.5rem;
+}
+
+.banner h2 {
+  text-transform: uppercase;
+  margin: 0.66rem 0;
+}
+
+.main {
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/moto.jpeg);
+  height: 25rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+}
+
+.title h2 {
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 0.25rem;
+  margin-left: 3rem;
+  padding-top: 2rem;
+}
+
+.title h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-left: 3rem;
+  padding-bottom: 2rem;
+}
+
+.container {
+  width: 960px;
+  margin-top: 9rem;
+}
+
+.title {
+  width: 25rem;
+  background-color: black;
+}
+
+@media only screen and (max-width: 768px){
+  .title h2 {
+    font-size: 0.77rem;
+  }
+  .title h1 {
+    font-size: 1rem;
+  }
+  .main {
+    height: 15rem;
+  }
+  .container {
+    margin-top: 8.5rem;
+  }
+}
+
+nav {
+  background-color: firebrick;
+  display: flex;
+  justify-content: space-around;
+}
+
+span h2 {
+  display: inline-block;
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+
+@media only screen and (max-width: 1024px){
+  .one, .two, .three, .four, .five, .six{
+    display: none;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+  .seven {
+    display: none;
+  }
+}
+
+.products {
+  display: flex;
+  width: 70%;
+  overflow: hidden;
+  height: 15rem;
+  justify-content: space-between;
+  margin: 3rem auto;
+}
+
+.pen {
+  display: flex;
+  height: auto;
+  flex-wrap: wrap;
+  width: 30%;
+  max-width: 100%;
+  border: 0.15rem solid black;
+  overflow: hidden;
+}
+
+.pen img {
+  height: 9rem;
+  margin: 2rem auto;
+}
+
+.pen h2 {
+  background-color: black;
+  height: 2rem;
+  padding: 0.5rem 0;
+  width: 100%;
+  text-align: center;
+}
+
+.watches {
+  display: flex;
+  height: auto;
+  flex-wrap: wrap;
+  width: 30%;
+  max-width: 100%;
+  border: 0.15rem solid black;
+  overflow: hidden;
+}
+
+.watches img {
+  height: 9rem;
+  margin: 2rem auto;
+}
+
+.watches h2 {
+  background-color: black;
+  height: 2rem;
+  padding: 0.5rem 0;
+  width: 100%;
+  text-align: center;
+}
+
+.glasses{
+  display: flex;
+  height: auto;
+  flex-wrap: wrap;
+  width: 30%;
+  max-width: 100%;
+  border: 0.15rem solid black;
+  overflow: hidden;
+}
+
+.glasses img {
+  height: 5rem;
+  margin: 4rem auto;
+}
+
+.glasses h2 {
+  background-color: black;
+  height: 2rem;
+  padding: 0.5rem 0;
+  width: 100%;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1024px){
+.glasses{
+    display: none;
+  }
+  .watches, .pen{
+    width: 47%;
+  }
+  .products{
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px){
+  .watches{
+    display: none;
+  }
+  .products{
+    width: 90%;
+  }
+  .pen {
+    width: 100%;
+  }
+}
+
+.bottom {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: space-between;
+  flex-direction: column;
+  width: 70%;
+  margin: 0 auto;
+  height: 4rem;
+}
+
+.location {
+  background-color: black;
+  width: 35%;
+  padding-left: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.hours {
+  background-color: black;
+  width: 35%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 2rem;
+}
+
+
+.coordinates {
+  width: 35%;
+  color: black;
+}
+
+.time {
+  width: 35%;
+  margin-right: 2rem;
+  color: black;
+}
+
+@media only screen and (max-width: 768px){
+.bottom {
+  display: block;
+  width: 95%;
+  margin-left: 2rem;
+}
+.location, .hours, .coordinates, .time {
+  width: 90%;
+}
+.coordinates {
+  margin-bottom: 0.5rem;
+}
+
+}
+
+footer {
+  display: flex;
+  background-color: black;
+  margin-top: 4rem;
+  color: white;
+  height: 5rem;
+  width: 100%;
+  align-items: center;
+}
+
+footer h2{
+  margin: auto;
+  width: 70%;
+}
+
+@media only screen and (max-width: 768px){
+footer {
+  position: relative;
+  top: 4rem;
+}
+footer h2{
+  text-align: center;
+}
+
+}
